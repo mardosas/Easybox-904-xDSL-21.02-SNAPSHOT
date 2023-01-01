@@ -1,0 +1,1388 @@
+Package: ahcpd
+Version: 0.53-3
+Depends: libc, ip, librt
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 18622
+Filename: ahcpd_0.53-3_mips_24kc.ipk
+Size: 19493
+SHA256sum: 3c6cec7c509e32c085513b785e392cce45a9a9d53a75a1fb98fa8fc0a4671b60
+Description:  Ahcpd is a daemon for configuring an IPv6 network using the Ad-Hoc
+ Configuration Protocol (AHCP).  AHCP is designed for wireless mesh
+ networks, where IPv6 autoconfiguration and DHCPv6 do not work, but may
+ also be used on wired networks.
+
+Package: alfred
+Version: 2021.1-3
+Depends: libc, libnl-tiny1, librt
+License: GPL-2.0-only MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 20555
+Filename: alfred_2021.1-3_mips_24kc.ipk
+Size: 21602
+SHA256sum: d011699d2bfeac84041e0cedec4075eb1219545d895c70085a14aa92e52cec50
+Description:  alfred is a user space daemon for distributing arbitrary local information
+ over the mesh/network in a decentralized fashion. This data can be anything
+ which appears to be useful - originally designed to replace the batman-adv
+ visualization (vis), you may distribute hostnames, phone books, administration
+ information, DNS information, the local weather forecast ...
+ 
+ alfred runs as daemon in the background of the system. A user may insert
+ information by using the alfred binary on the command line, or use special
+ programs to communicate with alfred (done via unix sockets). alfred then takes
+ care of distributing the local information to other alfred servers on other
+ nodes. This is done via IPv6 link-local multicast, and does not require any
+ configuration. A user can request data from alfred, and will receive the
+ information available from all alfred servers in the network.
+
+Package: babel-pinger
+Version: 0.1-1
+Depends: libc, librt
+Section: net
+Architecture: mips_24kc
+Installed-Size: 3462
+Filename: babel-pinger_0.1-1_mips_24kc.ipk
+Size: 4251
+SHA256sum: e1de2c3702c097c2b6c76366397e8bb40b83726ff1c6152f25268b9fd16a50cf
+Description:  Babel-pinger is a hack to export a default route into Babel for people
+ using DHCP to configure their routers rather than speaking to their
+ upstream provider with a proper routing protocol.
+
+Package: babeld
+Version: 1.12.1-2
+Depends: libc, libubus20210630, libubox20210516
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 54474
+Filename: babeld_1.12.1-2_mips_24kc.ipk
+Size: 55562
+SHA256sum: 72d7899fc80b9ba49a696c5d04b74c8c67e5267da4a017b910773c11097359c1
+Description:  Babel is a loop-avoiding distance-vector routing protocol for IPv6 and IPv4
+ with fast convergence properties. It is based on the ideas in DSDV, AODV and
+ Cisco's EIGRP, but is designed to work well not only in wired networks but
+ also in wireless mesh networks, and has been extended with support for
+ overlay networks. Babel is an IETF standard protocol (RFC 8966).
+
+Package: batctl-default
+Version: 2021.1-2
+Depends: libc, libnl-tiny1, librt
+Provides: batctl
+Alternatives: 200:/usr/sbin/batctl:/usr/libexec/batctl-default
+License: GPL-2.0-only ISC MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 36522
+Filename: batctl-default_2021.1-2_mips_24kc.ipk
+Size: 37403
+SHA256sum: 6bd7fd08c4857245bfc2b2cfde8346e3efa7ce67ea8f55eb3e0b6239c22de7a6
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2021.1 of the user space utility.
+ Standard subcommands for configuration and online debugging are enabled.
+
+Package: batctl-full
+Version: 2021.1-2
+Depends: libc, libnl-tiny1, librt
+Provides: batctl
+Alternatives: 300:/usr/sbin/batctl:/usr/libexec/batctl-full
+License: GPL-2.0-only ISC MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 42937
+Filename: batctl-full_2021.1-2_mips_24kc.ipk
+Size: 43888
+SHA256sum: 16e85bf9e7a73e1005fe82387ad108abefc98b7895985201dffdef1b8cd216f5
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2021.1 of the user space utility.
+ Subcommands for configuration, online and offline debugging are enabled.
+
+Package: batctl-tiny
+Version: 2021.1-2
+Depends: libc, libnl-tiny1, librt
+Provides: batctl
+Alternatives: 100:/usr/sbin/batctl:/usr/libexec/batctl-tiny
+License: GPL-2.0-only ISC MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 12061
+Filename: batctl-tiny_2021.1-2_mips_24kc.ipk
+Size: 13076
+SHA256sum: 238eb1507c7f048ea4d9e73eb74d8b88ae1c60f0b48fc05d388e7a1cad4fb3ea
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2021.1 of the user space utility.
+ Only configuration relevant subcommands are enabled.
+
+Package: batmand
+Version: 1440-1
+Depends: libc, libpthread, kmod-tun
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 35323
+Filename: batmand_1440-1_mips_24kc.ipk
+Size: 36101
+SHA256sum: a58cdb18972d65f0026e09a521425dabd0626f65e856bf6e425608432a0067a7
+Description:  B.A.T.M.A.N. layer 3 routing daemon
+
+Package: bird1-ipv4-uci
+Version: 0.3-1
+Depends: libc, bird1-ipv4, libuci20130104, uci
+License: GPL-3.0+
+Section: net
+Architecture: mips_24kc
+Installed-Size: 6733
+Filename: bird1-ipv4-uci_0.3-1_mips_24kc.ipk
+Size: 7724
+SHA256sum: 7318a9adc0db85ee50b48790a43d6dd882c6f78d7e31c764e4bbfdde75d47ac5
+Description:  bird1-ipv4 UCI integration module
+
+Package: bird1-ipv4
+Version: 1.6.8-2
+Depends: libc, libpthread
+Conflicts: bird4
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 180645
+Filename: bird1-ipv4_1.6.8-2_mips_24kc.ipk
+Size: 181926
+SHA256sum: 6eb949163331a81bb4e50fe784eb862aa2df75e2aec9770b1d0d3ad84a35089b
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+ support into separate binaries. See also the bird2 package for the newer
+ branch which integrates support for both IP protocols in a single binary.
+ 
+ This is IPv4 version of BIRD, it supports OSPFv2, RIPv2 and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: bird1-ipv6-uci
+Version: 0.3-1
+Depends: libc, bird1-ipv6, libuci20130104, uci
+License: GPL-3.0+
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5895
+Filename: bird1-ipv6-uci_0.3-1_mips_24kc.ipk
+Size: 6816
+SHA256sum: 5f44002ac691f82cec304217e3670c688bdd3ece3ec7506ac50ed9306280918d
+Description:  bird1-ipv6 UCI integration module
+
+Package: bird1-ipv6
+Version: 1.6.8-2
+Depends: libc, libpthread
+Conflicts: bird6
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 206329
+Filename: bird1-ipv6_1.6.8-2_mips_24kc.ipk
+Size: 207398
+SHA256sum: 84dbd76ab0d148696e005a952af9666c140525abac11993bd11c4b25f6c64d88
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+ support into separate binaries. See also the bird2 package for the newer
+ branch which integrates support for both IP protocols in a single binary.
+ 
+ This is IPv6 version of BIRD, it supports OSPFv3, RIPng and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: bird1c-ipv4
+Version: 1.6.8-2
+Depends: libc, libreadline8, libncurses6, bird1-ipv4
+Conflicts: birdc4
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7988
+Filename: bird1c-ipv4_1.6.8-2_mips_24kc.ipk
+Size: 9191
+SHA256sum: b1372373ef7775d57851fd57d8cfc9a61116448a9de5341126e64e36b096aeba
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+ support into separate binaries. See also the bird2 package for the newer
+ branch which integrates support for both IP protocols in a single binary.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: bird1c-ipv6
+Version: 1.6.8-2
+Depends: libc, libreadline8, libncurses6, bird1-ipv6
+Conflicts: birdc6
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 8070
+Filename: bird1c-ipv6_1.6.8-2_mips_24kc.ipk
+Size: 9272
+SHA256sum: 354e114771a71ab23d54c432b94d93663762ba4572e2079f1ed0b72505ed633b
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+ support into separate binaries. See also the bird2 package for the newer
+ branch which integrates support for both IP protocols in a single binary.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: bird1cl-ipv4
+Version: 1.6.8-2
+Depends: libc, bird1-ipv4
+Conflicts: birdcl4
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7398
+Filename: bird1cl-ipv4_1.6.8-2_mips_24kc.ipk
+Size: 8530
+SHA256sum: e27afcebc115867e641c32e6a863c5f4510f68d033f0b43e9b2f8c1982356700
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+ support into separate binaries. See also the bird2 package for the newer
+ branch which integrates support for both IP protocols in a single binary.
+ 
+ This is a BIRD lightweight command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+
+Package: bird1cl-ipv6
+Version: 1.6.8-2
+Depends: libc, bird1-ipv6
+Conflicts: birdcl6
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7479
+Filename: bird1cl-ipv6_1.6.8-2_mips_24kc.ipk
+Size: 8605
+SHA256sum: 68f4ee26853ad1473a9ba5e0d4e15c1a2e6490e6244f3b391abb151d3264eaf0
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+ support into separate binaries. See also the bird2 package for the newer
+ branch which integrates support for both IP protocols in a single binary.
+ 
+ This is a BIRD lightweight command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+
+Package: bird2
+Version: 2.0.11-1
+Depends: libc, libpthread
+Conflicts: bird1-ipv4, bird1-ipv6, bird4, bird6
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 328065
+Filename: bird2_2.0.11-1_mips_24kc.ipk
+Size: 327692
+SHA256sum: 95762220dda0d47ea8d059aea263d3de8d84edad24600ae80133df3e6db86051
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ 
+ BIRD supports OSPFv2, RIPv2, Babel and BGP protocols for IPv4 and
+ OSPFv3, RIPng, Babel and BGP protocols for IPv6.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+ This is the 2.0 branch of Bird which integrates support for IPv4 and IPv6
+ into a single branch, and also adds support for the Babel routing protocol.
+
+Package: bird2c
+Version: 2.0.11-1
+Depends: libc, bird2, libreadline8, libncurses6
+Conflicts: bird1c-ipv4, bird1c-ipv6, birdc4, birdc6
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 8089
+Filename: bird2c_2.0.11-1_mips_24kc.ipk
+Size: 9192
+SHA256sum: c43c415aedadce7dbcb0c583806b309c4e9fa2669d300f7506c357bab0559f06
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+
+Package: bird2cl
+Version: 2.0.11-1
+Depends: libc, bird2
+Conflicts: bird1cl-ipv4, bird1cl-ipv6, birdcl4, birdcl6
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 6976
+Filename: bird2cl_2.0.11-1_mips_24kc.ipk
+Size: 8025
+SHA256sum: 0fa1dcc2a5b6e4ee07494fcac0b5426b5086e2508cb65f8a0c497ca27a5a818a
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ 
+ This is a BIRD lightweight command-line client. It is used to send commands
+ to BIRD, commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+
+Package: bmx6-json
+Version: r2018051214-2
+Depends: libc, bmx6, libjson-c5
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5971
+Filename: bmx6-json_r2018051214-2_mips_24kc.ipk
+Size: 6711
+SHA256sum: a67f7c8daa8b6c312cf4c403eb84914851752e899f2ba291aa9949bd63a54436
+Description:  json plugin based on json-c
+
+Package: bmx6-sms
+Version: r2018051214-2
+Depends: libc, bmx6
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 4829
+Filename: bmx6-sms_r2018051214-2_mips_24kc.ipk
+Size: 5533
+SHA256sum: 46b6eb7d60cf7e97fc352f8175e2535d81f6d389717bb128cba5fe8aa1058d15
+Description:  sms plugin
+
+Package: bmx6-table
+Version: r2018051214-2
+Depends: libc, bmx6
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7997
+Filename: bmx6-table_r2018051214-2_mips_24kc.ipk
+Size: 8807
+SHA256sum: 0ffd8972543af141945dcf37630e69490ba07718f00d5b9900605421aaeffbf4
+Description:  bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
+
+Package: bmx6-uci-config
+Version: r2018051214-2
+Depends: libc, bmx6, libuci20130104
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 8011
+Filename: bmx6-uci-config_r2018051214-2_mips_24kc.ipk
+Size: 8821
+SHA256sum: e9aedaf194b8e83a6130ee4683faad73a59512db0582e83b48fb58c994375c16
+Description:  configuration plugin based on uci (recommended!)
+
+Package: bmx6
+Version: r2018051214-2
+Depends: libc, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 128858
+Filename: bmx6_r2018051214-2_mips_24kc.ipk
+Size: 129624
+SHA256sum: 6e9f5543ba7b33d5b7d1220725f5702945f13b24b2618acddd1f07a513752e5c
+Description:  BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6
+
+Package: bmx7-iwinfo
+Version: 7.1.1-4
+Depends: libc, bmx7, libiwinfo20210430
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 4017
+Filename: bmx7-iwinfo_7.1.1-4_mips_24kc.ipk
+Size: 4776
+SHA256sum: 61f9347e327411921e77cbabec69dd850ff7150a1b159151ea2e7c111a1af39f
+Description:  link characteristics plugin via libiwinfo (recommended!)
+
+Package: bmx7-json
+Version: 7.1.1-4
+Depends: libc, bmx7, libjson-c5
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7384
+Filename: bmx7-json_7.1.1-4_mips_24kc.ipk
+Size: 8180
+SHA256sum: 0881d981962de0eb023ece5b15982dde10a0edd106298778679aec3f9f311a77
+Description:  json plugin based on json-c
+
+Package: bmx7-sms
+Version: 7.1.1-4
+Depends: libc, bmx7
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5383
+Filename: bmx7-sms_7.1.1-4_mips_24kc.ipk
+Size: 6126
+SHA256sum: 4c03f3d463afd7f5ffc8c383caa266a9ebabc502af5acafe35b66f9a65808194
+Description:  sms plugin
+
+Package: bmx7-table
+Version: 7.1.1-4
+Depends: libc, bmx7, bmx7-tun
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 8993
+Filename: bmx7-table_7.1.1-4_mips_24kc.ipk
+Size: 9766
+SHA256sum: 9c2ec83cf9671387177230d86bf229556343fec0f3bb706142de9f2e2d057b0f
+Description:  plugin to announce routes from tables via tunnels
+
+Package: bmx7-topology
+Version: 7.1.1-4
+Depends: libc, bmx7
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5005
+Filename: bmx7-topology_7.1.1-4_mips_24kc.ipk
+Size: 5743
+SHA256sum: 7c8c71502672d2d2d4a00136f72ba1bf0a5d02edf4dc63b9f1a98d6bfe667a89
+Description:  topology plugin
+
+Package: bmx7-tun
+Version: 7.1.1-4
+Depends: libc, bmx7, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 24348
+Filename: bmx7-tun_7.1.1-4_mips_24kc.ipk
+Size: 24980
+SHA256sum: 2967e26f2b991369f7be46365d221016a863bbfb2fe92807dd10f45291abe66c
+Description:  ipip-based tunnel plugin (recommended!)
+
+Package: bmx7-uci-config
+Version: 7.1.1-4
+Depends: libc, bmx7, libuci20130104
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7673
+Filename: bmx7-uci-config_7.1.1-4_mips_24kc.ipk
+Size: 8516
+SHA256sum: d4d057d7d33b9131b7e7b90c3af2341eef9035952b27693cd0994d8e63a0f27d
+Description:  configuration plugin based on uci (recommended!)
+
+Package: bmx7
+Version: 7.1.1-4
+Depends: libc, zlib, libmbedtls12, libiwinfo20210430
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 156729
+Filename: bmx7_7.1.1-4_mips_24kc.ipk
+Size: 157400
+SHA256sum: 6f9616d8f2170ea0ccd5d51d40deded9f5d6a43647a8fb1661607c448ca27d89
+Description:  BMX7 routing daemon supporting securely-entrusted IPv6 (and IPv4in6) routing
+
+Package: cjdns-tests
+Version: v21.1-4
+Depends: libc, libpthread, librt
+License: GPL-3.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 340850
+Filename: cjdns-tests_v21.1-4_mips_24kc.ipk
+Size: 340602
+SHA256sum: 23bc14ac5509fe089f5f93c3c8b76194cfe78cd86f114b1b6a2d1adb86ea709a
+Description:  cjdns test cases
+
+Package: cjdns
+Version: v21.1-4
+Depends: libc, kmod-tun, libnl-tiny1, libpthread, librt, libuci-lua, lua-bencode, dkjson, luasocket, lua-sha2
+License: GPL-3.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 412922
+Filename: cjdns_v21.1-4_mips_24kc.ipk
+Size: 413429
+SHA256sum: 4baa6da462f361c5622350fbba458653d1bd444514dd470dcb2b84dadf8ed52b
+Description:  Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking, and prevents many of the security and scalability issues that plague existing networks.
+
+Package: hnet-full-l2tp
+Version: 2018-12-21-c4376661-1
+Depends: libc, hnetd-nossl, luci-app-hnet, ip-full, kmod-l2tp-eth, babeld, ohybridproxy, zonestitcher, miniupnpd, minimalist-pcproxy
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 545
+Filename: hnet-full-l2tp_2018-12-21-c4376661-1_mips_24kc.ipk
+Size: 1388
+SHA256sum: f321cffdb5ca61c515f09c570bc7267fea700213965d4673782627e8ce7d4a07
+Description:  HNCP Homenet metapackage (w/ L2TP)
+
+Package: hnet-full-secure
+Version: 2018-12-21-c4376661-1
+Depends: libc, hnetd-openssl, luci-app-hnet, ip, babeld, ohybridproxy, zonestitcher, miniupnpd, minimalist-pcproxy
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 97
+Filename: hnet-full-secure_2018-12-21-c4376661-1_mips_24kc.ipk
+Size: 927
+SHA256sum: 005ec0e0c8f7f43eba581487fc7e88ccfaefdb072de63b1f085acf778fcd67f3
+Description:  HNCP Homenet metapackage (w/ SSL)
+
+Package: hnet-full
+Version: 2018-12-21-c4376661-1
+Depends: libc, hnetd-nossl, luci-app-hnet, ip, babeld, ohybridproxy, zonestitcher, miniupnpd, minimalist-pcproxy
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 97
+Filename: hnet-full_2018-12-21-c4376661-1_mips_24kc.ipk
+Size: 908
+SHA256sum: 6e74ad5a4517faaabd3257990bc18337394f8006a3063d300cca442d270604f1
+Description:  HNCP Homenet metapackage
+
+Package: hnetd-nossl
+Version: 2018-12-21-c4376661-1
+Depends: libc, odhcpd, odhcp6c, netifd
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 84137
+Filename: hnetd-nossl_2018-12-21-c4376661-1_mips_24kc.ipk
+Size: 85047
+SHA256sum: 3af582f8267067fc43997d6e7bc91b3933112765c501d7323feb6d2de4746fb4
+Description:  This package provides a daemon which implementats distributed prefix assignment
+ and service discovery for a home network consisting of multiple routers
+ connected to multiple service providers. It provides a netifd protocol "hnet"
+ for use in /etc/config/network.
+
+Package: hnetd-openssl
+Version: 2018-12-21-c4376661-1
+Depends: libc, odhcpd, odhcp6c, netifd, libopenssl1.1
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 92480
+Filename: hnetd-openssl_2018-12-21-c4376661-1_mips_24kc.ipk
+Size: 93295
+SHA256sum: 25f70502c9504d8adfc97d05886798dc21e835eee6e184bf5591daf778f11d7a
+Description:  This package provides a daemon which implementats distributed prefix assignment
+ and service discovery for a home network consisting of multiple routers
+ connected to multiple service providers. It provides a netifd protocol "hnet"
+ for use in /etc/config/network.
+
+Package: luci-app-bird1-ipv4
+Version: 0.3-1
+Depends: libc, bird1-ipv4-uci, luci-base
+License: GPL-3.0+
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 7419
+Filename: luci-app-bird1-ipv4_0.3-1_mips_24kc.ipk
+Size: 8214
+SHA256sum: 9496dc5e82d96e2481e59689286a73e9ccbbbe4ffb43fa044aa5d1871523ad0a
+Description:  bird4 application for LuCI
+
+Package: luci-app-bird1-ipv6
+Version: 0.3-1
+Depends: libc, bird1-ipv6-uci, luci-base
+License: GPL-3.0+
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 7464
+Filename: luci-app-bird1-ipv6_0.3-1_mips_24kc.ipk
+Size: 8256
+SHA256sum: 2c28089362ac2a9338ba517ddead48e0d3053cf45e694123b9f73b29346e8857
+Description:  bird6 application for LuCI
+
+Package: luci-app-bmx6
+Version: 6
+Depends: libc, luci-lib-json, luci-base, luci-lib-httpclient, bmx6, luci-lib-jquery-1-4, luci-lib-dracula
+License: GPL-2.0+
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 30302
+Filename: luci-app-bmx6_6_mips_24kc.ipk
+Size: 31117
+SHA256sum: ad847916bee1dd1e4d37757bc29eccb058ffeb5e53278b2e0a3acbb7fcbf8f5a
+Description:  bmx6 web application (status and configuration) for LuCi web interface
+
+Package: luci-app-cjdns
+Version: 1.3-9
+Depends: libc, cjdns, luci-compat, luci-base
+License: GPL-3.0-or-later
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 5673
+Filename: luci-app-cjdns_1.3-9_mips_24kc.ipk
+Size: 6554
+SHA256sum: 0ac542891e49796b0d3f591e3f5e1456b8998d31fef3077a72c09c22a8e7b6c4
+Description:  Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking, and prevents many of the security and scalability issues that plague existing networks.
+
+Package: luci-app-hnet
+Version: 2018-12-21-c4376661-1
+Depends: libc
+License: GPL-2.0-only
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 56777
+Filename: luci-app-hnet_2018-12-21-c4376661-1_mips_24kc.ipk
+Size: 57612
+SHA256sum: 564ab753407fbd14bd2b87209fac687bc4402df196eece466279f50032e079f3
+Description:  HNCP Homenet configuration and visualization
+
+Package: luci-lib-dracula
+Version: 6
+Depends: libc
+License: GPL-2.0+
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 23282
+Filename: luci-lib-dracula_6_mips_24kc.ipk
+Size: 23992
+SHA256sum: bd6794f690351dd484bcc235b5c0b92ad0b70a220b8b30a4c67fb76e2ba4d37d
+Description:  dracula graph javascript library
+
+Package: luci-lib-jquery-1-4
+Version: 6
+Depends: libc
+License: GPL-2.0+
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 24819
+Filename: luci-lib-jquery-1-4_6_mips_24kc.ipk
+Size: 25545
+SHA256sum: a36a055cbf69952417d624533d2faa3cb221dd6dbe55e0ee18543fc739fad783
+Description:  minified javascript jQuery 1.4 library
+
+Package: mcproxy
+Version: 2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-3
+Depends: libc, libpthread, libstdcpp6
+License: GPL-2.0+
+Section: net
+Architecture: mips_24kc
+Installed-Size: 103112
+Filename: mcproxy_2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99-3_mips_24kc.ipk
+Size: 104080
+SHA256sum: 5b0b26ec71c001f796f59e6378e9704a08f779f7c732a7390fa4ca66a5ac67b6
+Description:  mcproxy is a free & open source implementation of the IGMP/MLD proxy function (see  RFC 4605) for Linux systems.
+ It operates on the kernel tables for multicast routing and allows for multiple instantiations,
+ as well as dynamically changing downstream interfaces.
+
+Package: mesh11sd
+Version: 1.2.0-3
+Depends: libc
+License: GPL-2.0-or-later
+Section: net
+Architecture: all
+Installed-Size: 3803
+Filename: mesh11sd_1.2.0-3_all.ipk
+Size: 5037
+SHA256sum: fcc30ec57d705a1a68ef82b6226aee772daa04c21c3fdb97d9008f1842bf33ac
+Description:  Mesh11sd is a dynamic parameter configuration daemon for 802.11s mesh networks.
+ It was originally designed to leverage 802.11s mesh networking at Captive Portal venues.
+ This is the open source version and it enables easy and automated mesh network operation with multiple mesh nodes.
+ It allows all mesh parameters supported by the wireless driver to be set in the uci config file.
+ Settings take effect immediately without having to restart the wireless network.
+ Default settings give rapid and reliable layer 2 mesh convergence.
+ Without mesh11sd, many mesh parameters cannot be set in the uci wireless config file as the mesh interface must be up before the parameters can be set.
+ Some of those that are supported, would fail to be implemented when the network is (re)started resulting in errors or dropped nodes.
+ The mesh11sd daemon dynamically checks configured parameters and sets them as required.
+ This version does not require a Captive Portal to be running.
+
+Package: minimalist-pcproxy
+Version: 2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-2
+Depends: libc, libubox20210516
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5497
+Filename: minimalist-pcproxy_2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-2_mips_24kc.ipk
+Size: 6542
+SHA256sum: c4ac1c4b1d3b27dc66d94608b04ae3b9ee652aff663a8174c53644ad9f3572a4
+Description:  This package contains a daemon which can be used to forward
+ PCP (Port Control Protocol - RFC6887) requests requests to PCP remote servers.
+ 
+ In and of itself, it is not very useful, but combined with hnetd+miniupnpd
+ it allows for control of NAT forwarding and firewall pinholes from multiple
+ hops away.
+
+Package: mrd6
+Version: 2013-11-30-c805eb33-7
+Depends: libc, libstdcpp6
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 279030
+Filename: mrd6_2013-11-30-c805eb33-7_mips_24kc.ipk
+Size: 279818
+SHA256sum: 306b1791bf5d6f1909291259fc915c597a8210a8b2f5c77bb4cd08e17a971cd8
+Description:  Multicast is becoming a major component in next generation networks, used 
+ in several scenarios, from video broadcasting to multimedia conferencing. 
+ In order to be implemented, new technology needs supporting hardware and 
+ software across a set of devices and systems. MRD6 is an implementation of 
+ a modular IPv6 Multicast Routing Framework for the Linux operating system 
+ and provides MLDv2 (as well as MLDv1), PIM-SM and MBGP support.
+
+Package: naywatch
+Version: 1-7
+Depends: libc, owipcalc
+License: GPL-2.0-only
+Section: utils
+Architecture: all
+Installed-Size: 1940
+Filename: naywatch_1-7_all.ipk
+Size: 2843
+SHA256sum: b71d89cb7d9768e3f7562af2686d00c87add5ff9a8f00d0e0cfbd60427cf48ea
+Description:  Reboots or triggers watchdog if no link-local neighbor is available.
+ 
+ Important:
+ Be careful when you do a sysupgrade. Stop naywatch first, and make
+ sure procd took control again of the watchdog.
+ You can do this using 'ubus call system watchdog'.  Status should be "running".
+
+Package: ndppd
+Version: 0.2.5-1
+Depends: libc, uclibcxx
+License: GPL-3.0+
+Section: net
+Architecture: mips_24kc
+Installed-Size: 27567
+Filename: ndppd_0.2.5-1_mips_24kc.ipk
+Size: 28508
+SHA256sum: 256cc33dbf265ccce7f72ee161a0f7fd044d1fe5e5df77c83c162ce783e4b798
+Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery
+ Protocol) messages between interfaces.  ndppd currently only supports Neighbor
+ Solicitation Messages and Neighbor Advertisement Messages.
+ 
+ The ndp_proxy provided by Linux doesn't support listing proxies, and only hosts
+ are supported.  No subnets.  ndppd solves this by listening for Neighbor
+ Solicitation messages on an interface, then query the internal interfaces for
+ that target IP before finally sending a Neighbor Advertisement message.
+
+Package: nodogsplash
+Version: 5.0.0-1
+Depends: libc, libpthread, iptables-mod-ipopt, libmicrohttpd-no-ssl
+Conflicts: nodogsplash2
+License: GPL-2.0+
+Section: net
+Architecture: mips_24kc
+Installed-Size: 41837
+Filename: nodogsplash_5.0.0-1_mips_24kc.ipk
+Size: 42738
+SHA256sum: 9944c7d5a2b72f41dcdf66224346f8156a4bfb6a62f00fba714909b5dce3d7c5
+Description:  Nodogsplash is a Captive Portal that offers a simple way to
+ provide restricted access to the Internet by showing a splash
+ page to the user before Internet access is granted.
+ It also incorporates an API that allows the creation of
+ sophisticated authentication applications.
+
+Package: ohybridproxy
+Version: 2020-05-22-0dfef1eb-3
+Depends: libc, libubox20210516, mdnsd
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 9282
+Filename: ohybridproxy_2020-05-22-0dfef1eb-3_mips_24kc.ipk
+Size: 10141
+SHA256sum: 0b26bfb103b2cf9ed79ee9e1da36637e9fc7c76df4718304f769213a6685d205
+Description:  This package provides a statically configured daemon for translating DNS
+ requests to Multicast DNS and back again.
+
+Package: olsrd-mod-arprefresh
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2073
+Filename: olsrd-mod-arprefresh_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 2842
+SHA256sum: ce77ef46705c82608afd460418856f4d738c9e107d3f026e4f2c0d103d5576ed
+Description:  Kernel ARP cache refresh plugin
+
+Package: olsrd-mod-bmf
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd, kmod-tun
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 11278
+Filename: olsrd-mod-bmf_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 12062
+SHA256sum: 8784135e736f1241feaf5395ae44e602331ab5487cfbc103e238b144385faaad
+Description:  Basic multicast forwarding plugin
+
+Package: olsrd-mod-dot-draw
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 3728
+Filename: olsrd-mod-dot-draw_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 4470
+SHA256sum: d39afc7ec20758ec1e877aa5b6e032a0a50858abf406878ec7ec21e9e7abca59
+Description:  Dot topology information plugin
+
+Package: olsrd-mod-dyn-gw-plain
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2248
+Filename: olsrd-mod-dyn-gw-plain_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 3021
+SHA256sum: a22bff950573b06113b48f9ea5dc8dd5ff942ed0ffb6181a0649708504ba61e2
+Description:  Dynamic internet gateway plain plugin
+
+Package: olsrd-mod-dyn-gw
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 3836
+Filename: olsrd-mod-dyn-gw_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 4571
+SHA256sum: a3d80cbf7103098a1d167c5504eefa0c3cd4a07da61df300fcd6c24e74c1dfda
+Description:  Dynamic internet gateway plugin
+
+Package: olsrd-mod-filtergw
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2546
+Filename: olsrd-mod-filtergw_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 3274
+SHA256sum: 6f1cd8b819b810c97f37435dc50b65d0a74e22e747c5935ebcd1bd4c515c4be0
+Description:  Filter Gateway plugin
+
+Package: olsrd-mod-httpinfo
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 30277
+Filename: olsrd-mod-httpinfo_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 31072
+SHA256sum: f641521fd2194d8b3776c0ea0c7249a588f8f6cb3b4c2339a5e67eb0b552fb84
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-jsoninfo
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 20908
+Filename: olsrd-mod-jsoninfo_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 21690
+SHA256sum: f352c57145d4ace9b4a7bb4cd4a0131039c05b6edc4d9761c6d7cfbff0139c5b
+Description:  Small informative plugin with JSON output
+
+Package: olsrd-mod-mdns
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 8366
+Filename: olsrd-mod-mdns_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 9179
+SHA256sum: 0304a1b7d9f586d1c53e92a4e74055792c1a0f169b934f690ca35025f3799a0f
+Description:  MDNS/Zeroconf/Bonjour packet distribution 
+
+Package: olsrd-mod-nameservice
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 10285
+Filename: olsrd-mod-nameservice_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 11047
+SHA256sum: 7a5e3184a9dd733422d955b61a7077bad290f1f139475d7f0dda1d0a873d21e1
+Description:  Lightweight hostname resolver plugin
+
+Package: olsrd-mod-netjson
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 11940
+Filename: olsrd-mod-netjson_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 12720
+SHA256sum: d753e2f4782c91a2e2fa978f0fea638e38645e3655bcbc7188d2671f606f2d75
+Description:  netjson plugin with JSON output
+
+Package: olsrd-mod-p2pd
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7893
+Filename: olsrd-mod-p2pd_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 8690
+SHA256sum: 563d5e943b25ec8bcad05b383101bc770912ebd5d53e13dc6d48f9fc04983875
+Description:  Peer to Peer Discovery plugin
+
+Package: olsrd-mod-pgraph
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2892
+Filename: olsrd-mod-pgraph_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 3640
+SHA256sum: 54628b8857f3041cae7e092f94192ebc7349d8c714cc2e713bb1c55dc4f38a3e
+Description:  output network topology for pgraph
+
+Package: olsrd-mod-pud
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd, libgps29
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 58983
+Filename: olsrd-mod-pud_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 59672
+SHA256sum: d589b7c6e5c12270e53f4c34134aa76ae1cda856e7440836963822944f8da380
+Description:  Position Update Distribution plugin
+
+Package: olsrd-mod-quagga
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 6009
+Filename: olsrd-mod-quagga_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 6735
+SHA256sum: 5798e247b8639c7fc39906116d00a4f41adcc3b2116a56710ad53b368dc993df
+Description:  Quagga plugin
+
+Package: olsrd-mod-secure
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 9762
+Filename: olsrd-mod-secure_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 10568
+SHA256sum: 7f8140537ba1964c7d4de9b1a9c2a9025f70519d7024b6559610a8f40f1744ba
+Description:  Message signing plugin to secure routing domain
+
+Package: olsrd-mod-sgwdynspeed
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 4308
+Filename: olsrd-mod-sgwdynspeed_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 5092
+SHA256sum: 7be898e79507cd028130754e4cf5124667ff6c89fa8231886a4950cdd6a7b6f4
+Description:  Smart Gateway dynamic speed plugin
+
+Package: olsrd-mod-txtinfo
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 13170
+Filename: olsrd-mod-txtinfo_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 13955
+SHA256sum: f4978b12c4183ff0c9c4d912b5398c34073536bbc42a03cc721fe0e9c6118b82
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-watchdog
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 1780
+Filename: olsrd-mod-watchdog_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 2511
+SHA256sum: 54ad3118b5b370bf68116d0a0509d30d7d73e9c62cc7486f354a6b9e2424ca0b
+Description:  Watchdog plugin
+
+Package: olsrd-utils
+Version: 2021-06-12-4973feb5-8
+Depends: libc, olsrd
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 1180
+Filename: olsrd-utils_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 1927
+SHA256sum: 04b1e2a6861a8ea0b7a3886c4d0160655a8a192f60451cb16dff0a708f4f329b
+Description:  Utils for OLSRD
+
+Package: olsrd
+Version: 2021-06-12-4973feb5-8
+Depends: libc, libpthread, libubus20210630
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 127160
+Filename: olsrd_2021-06-12-4973feb5-8_mips_24kc.ipk
+Size: 127926
+SHA256sum: e59e82ec0ec3b62483ad18d9607a64b879ef970cc59b1fd6e6542e57b47a480c
+Description:  OLSR (Optimized Link State Routing) daemon
+
+Package: oonf-dlep-proxy
+Version: v0.15.1
+Depends: libc, librt, libnl-tiny1, libuci20130104, oonf-init-scripts
+Section: net
+Architecture: mips_24kc
+Installed-Size: 92868
+Filename: oonf-dlep-proxy_v0.15.1_mips_24kc.ipk
+Size: 93665
+SHA256sum: 6742372219ca105cc5d3ec6696cd8d495f3a505cdab160a67c51d5cef07ea75c
+Description:  Build DLEP Radio+Router Agent
+
+Package: oonf-dlep-radio
+Version: 0.15.1-30
+Depends: libc, librt, libnl-tiny1, libuci20130104, oonf-init-scripts
+Section: net
+Architecture: mips_24kc
+Installed-Size: 89728
+Filename: oonf-dlep-radio_0.15.1-30_mips_24kc.ipk
+Size: 90559
+SHA256sum: 6edb094c458f74c97fbaa34209568277605a1d605926d1710639776efbd84cfb
+Description:  Build DLEP Radio Agent
+
+Package: oonf-init-scripts
+Version: 0.9.1-r3
+Depends: libc
+Section: net
+Architecture: mips_24kc
+Installed-Size: 1385
+Filename: oonf-init-scripts_0.9.1-r3_mips_24kc.ipk
+Size: 2117
+SHA256sum: f0a81691d32e999832823532c32f428b7a24cb97502fa750655053f7d2cdf5e2
+Description:  Common OONF startup scripts
+
+Package: oonf-olsrd2
+Version: v0.15.1
+Depends: libc, librt, libnl-tiny1, libuci20130104, oonf-init-scripts
+Section: net
+Architecture: mips_24kc
+Installed-Size: 142893
+Filename: oonf-olsrd2_v0.15.1_mips_24kc.ipk
+Size: 143672
+SHA256sum: eeb6c05d366530a6c43965ac1e1e0ef872b0386e215169ce9cb94b1aa7c59602
+Description:  Build Olsrd V2 Routing Agent
+
+Package: opennds
+Version: 9.8.0-2
+Depends: libc, kmod-ipt-conntrack, kmod-ipt-nat, libmicrohttpd-no-ssl
+Conflicts: nodogsplash
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 138576
+Filename: opennds_9.8.0-2_mips_24kc.ipk
+Size: 138350
+SHA256sum: 78f1d0e4fdb1972d9fe22d030b83eb62e3b7304b9f13deef5c9165559b60e858
+Description:  openNDS is a Captive Portal solution that offers an instant way to provide restricted access to the Internet.
+ With little or no configuration, a dynamically generated and adaptive splash page sequence is automatically served.
+ Both client driven Captive Portal Detection (CPD) and gateway driven Captive Portal Identification (CPI - RFC 8910 and RFC 8908) are supported.
+ Internet access is granted by either a click to continue button, or after credential verification as a result of filling in a login form.
+ The package incorporates the FAS API allowing many flexible customisation options.
+ The creation of sophisticated third party authentication applications is fully supported.
+ Internet hosted https portals can be implemented with no security errors, to inspire maximum user confidence.
+ This version requires iptables-legacy.
+
+Package: pimbd
+Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-2
+Depends: libc, netifd
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 71503
+Filename: pimbd_2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-2_mips_24kc.ipk
+Size: 72426
+SHA256sum: 9f89e47e9230430df31eb335b2c8a2ca97cc42394eadb73f358db15bdec2df32
+Description:  This package provides a daemon which implements the Protocol Independent
+ Multicast BIDIR routing protocol. Note that a routing protocol must be 
+ installed and running in order for PIM to function.
+
+Package: prince
+Version: v0.4-2
+Depends: libc, libjson-c5, libpthread
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 28341
+Filename: prince_v0.4-2_mips_24kc.ipk
+Size: 29241
+SHA256sum: 4e8256e9a8e79b1174ca1c8713e5fc495f0e57d0bfad8e80887044ff74079fc3
+Description:  Prince is an open source implementation of the PopRouting Algorithm.
+ It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
+ 
+ Prince fetches topology data from a Link State routing daemon (OONF, OLSR, OSPF, etc),
+ calculates the betweenness centrality using the topology and then computes the
+ the timers' optimal values using these data. At the end of the computation the timers are pushed back to the routing daemon.
+ Since v0.4 it supports both OONF and OLSRd.
+
+Package: quagga-bgpd
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 182375
+Filename: quagga-bgpd_1.2.4-2_mips_24kc.ipk
+Size: 181254
+SHA256sum: 274856e91b33811644823ed2a96949b2e8158ae4dbd9106b720ee90b3eae09e4
+Description:  BGPv4, BGPv4+, BGPv4- routing engine
+
+Package: quagga-isisd
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 80312
+Filename: quagga-isisd_1.2.4-2_mips_24kc.ipk
+Size: 80795
+SHA256sum: 5683cf71eb1d11fdec01943ba1417ad8a9baed1ccbbbbf4fbca3e89d857f6263
+Description:  IS-IS routing engine
+
+Package: quagga-libospf
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 169171
+Filename: quagga-libospf_1.2.4-2_mips_24kc.ipk
+Size: 169238
+SHA256sum: bc777b284e41a82ccab19952f9c69a2eb37b8aee7bc99324335c6611de98c466
+Description:  OSPF library
+
+Package: quagga-libzebra
+Version: 1.2.4-2
+Depends: libc, quagga
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 117868
+Filename: quagga-libzebra_1.2.4-2_mips_24kc.ipk
+Size: 117065
+SHA256sum: 14e11a1aeba633c497848f788e88574d8be98a90bab834afb6cf9938904a367e
+Description:  zebra library
+
+Package: quagga-ospf6d
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libospf
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 76705
+Filename: quagga-ospf6d_1.2.4-2_mips_24kc.ipk
+Size: 77180
+SHA256sum: 2389c492ee907924077092fd2fd26bf5e9511d52ccfd6054e3af4bbd7b47c145
+Description:  OSPFv3 routing engine
+
+Package: quagga-ospfd
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libospf
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 3454
+Filename: quagga-ospfd_1.2.4-2_mips_24kc.ipk
+Size: 4225
+SHA256sum: 4c113abc3edd02d4ba5dcb4cd712611f923eb20ab2c870b81858e5e3ce69342c
+Description:  OSPFv2 routing engine
+
+Package: quagga-ripd
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 32231
+Filename: quagga-ripd_1.2.4-2_mips_24kc.ipk
+Size: 32597
+SHA256sum: a61ba8fb11409777cd8dcbebb52b2179e07e3b8867bbcb5ea4d8f4dde4ccdb99
+Description:  RIP routing engine
+
+Package: quagga-ripngd
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 26240
+Filename: quagga-ripngd_1.2.4-2_mips_24kc.ipk
+Size: 26648
+SHA256sum: aeb4dc7b316c7153294003791cc65841e11f761a975ca6afa59922cc08562570
+Description:  RIPNG routing engine
+
+Package: quagga-vtysh
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra, libreadline8, libncurses6
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 133882
+Filename: quagga-vtysh_1.2.4-2_mips_24kc.ipk
+Size: 134541
+SHA256sum: d3139b4c879568c8c01fb1df8c7e05454e1fadb1d5e53fd66cec33cc581bf09e
+Description:  integrated shell for Quagga routing software
+
+Package: quagga-watchquagga
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 10553
+Filename: quagga-watchquagga_1.2.4-2_mips_24kc.ipk
+Size: 11317
+SHA256sum: 869495151f2d4461999892511aa059e3e3c6157fb7360c882b81516c566268ea
+Description:  Quagga watchdog
+
+Package: quagga-zebra
+Version: 1.2.4-2
+Depends: libc, quagga, quagga-libzebra
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 78232
+Filename: quagga-zebra_1.2.4-2_mips_24kc.ipk
+Size: 78551
+SHA256sum: 32dc83b4a5136370011c3424fd3de95f6b23fc947adea5f3d1847b36c8870b80
+Description:  Zebra daemon
+
+Package: quagga
+Version: 1.2.4-2
+Depends: libc, librt
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2380
+Filename: quagga_1.2.4-2_mips_24kc.ipk
+Size: 3192
+SHA256sum: 26028fd5e846c73ca214133d758211a039767fbea9f9983473c1c9ee11e0aaf9
+Description:  A routing software package that provides TCP/IP based routing services
+ with routing protocols support such as RIPv1, RIPv2, RIPng, OSPFv2,
+ OSPFv3, BGP-4, and BGP-4+
+
+Package: vis
+Version: 1440-2
+Depends: libc, libpthread
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 9262
+Filename: vis_1440-2_mips_24kc.ipk
+Size: 10053
+SHA256sum: 3535b1cea34947eeecf1b297a192f43c9fca9088823fccd924901cff63ef640b
+Description:  visualization server for B.A.T.M.A.N. layer 3
+
+Package: zonestitcher
+Version: 2020-05-22-0dfef1eb-3
+Depends: libc, libubox20210516
+License: GPL-2.0-only
+Section: net
+Architecture: mips_24kc
+Installed-Size: 7137
+Filename: zonestitcher_2020-05-22-0dfef1eb-3_mips_24kc.ipk
+Size: 7998
+SHA256sum: 00c6b45164fd8fdd143bba401b16f50f52bfff8e1f2a880276ee95486a0ccac3
+Description:  This package provides a statically configured daemon for translating DNS
+ requests to Multicast DNS and back again.
+
